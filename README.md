@@ -118,6 +118,7 @@ uvx pre-commit run --all-files
 
 # run the module
 uv run python -m datafun.app_case
+uv run python -m datafun.app_hasacco
 
 # do chores
 uv run ruff format .
@@ -188,3 +189,10 @@ Press `Ctrl+c` (both keys together) or `Ctrl+Z` then `Enter` on Windows.
 ```
 
 ![VS Code - Running Commands](./docs/images/vscode_running_commands.png)
+
+## Updates 5-16-26
+
+The code was updated to include printing of a horizontal boxplot for visualization of data.
+To accomplish this, the data list snowfall_inches was changed from a local variable to a global variable.
+The program will now produce the output listed above as well as a boxplot that opens in a separate window.
+To stop program, close boxplot window.
